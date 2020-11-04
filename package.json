@@ -1,7 +1,6 @@
 {
   "name": "poc-vue-lib",
   "main": "./dist/poc-vue-lib.common.js",
-  "types": "./dist/index.d.ts",
   "version": "0.1.0",
   "private": true,
   "files": [
@@ -15,7 +14,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-lib": "vue-cli-service build --target lib --name poc-vue-lib ./src/export.ts && tsc",
+    "build-lib": "vue-cli-service build --target lib --name poc-vue-lib ./src/export.js && tsc",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
